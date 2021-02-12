@@ -65,7 +65,7 @@ wait
 
 echo ""
 echo "  All done! 🎉"
-echo "  Please send back the Sketch Logs zip file."
+echo "  Please send back the Sketch Logs zip file. Thank you."
 echo ""
 
 # Reveal the zip file in Finder

@@ -24,9 +24,9 @@ The parameter can be set in
 - Running the script without the time parameter will default to `1h`
 - To retrieve the Collaboration or Console log, admin rights are required. Otherwise the operation will be simply skipped.
 
-## What’s in the logs
+## Logs List
 
-The following anonymous information is gathered, without any personal identifiers:
+The following information is collected:
 
 1. Sketch **Collaboration log**
 2. **Console log** filtered to `sketch` events only
@@ -36,5 +36,4 @@ The following anonymous information is gathered, without any personal identifier
 6. Basic **OS/CPU/GPU info**
 
 The logs are zipped up in a single file, ready to share with the support team.
-
-
+All the information inside these logs is anonymous and doesn't contain any personal identifiers.

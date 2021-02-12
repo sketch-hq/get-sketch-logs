@@ -18,50 +18,49 @@ echo ""
 sleep 1s
 
 # Create folder where all will be exported
-mkdir -p $f &
 echo "  Creating folder on Desktop…"
+mkdir -p "$f"
 wait
 
 # Get the Sketch Collaboration log from the system/console log
-log show --last $t --predicate '(subsystem == "com.bohemiancoding.sketch3.xcode") && (category == "collaboration")' --info >$f/Collab-$d.log &
 echo "  Copying Collaboration logs…"
+log show --last $t --predicate '(subsystem == "com.bohemiancoding.sketch3.xcode") && (category == "collaboration")' --info >"$f/Collab-$d.log"
 wait
 
 # Get the Sketch logs from the system/console log
-log show --last $t --predicate 'processImagePath CONTAINS[c] "Sketch"' --info >$f/Console-$d.log &
 echo "  Copying Console logs…"
+log show --last $t --predicate 'processImagePath CONTAINS[c] "Sketch"' --info >"$f/Console-$d.log"
 wait
 
 # Find and get all the Sketch crash logs within the given period
-find ~/Library/Logs/DiagnosticReports -mtime -$t -iname "*sketch*.crash" -exec cp {} $f \; &
 echo "  Copying Crash logs…"
+find ~/Library/Logs/DiagnosticReports -mtime -$t -iname "*sketch*.crash" -exec cp {} "$f" \;
 wait
 
 # Copy installed Sketch plugins list
-cp ~/Library/Application\ Support/com.bohemiancoding.sketch3/crash.environment.log $f/plugins.json &
 echo "  Copying Plugins list…"
+cp ~/Library/Application\ Support/com.bohemiancoding.sketch3/crash.environment.log "$f/plugins.json"
 wait
 
 # Copy Sketch preferences
-find ~/Library/Preferences -mtime -$t -iname "*sketch3*.plist" -exec cp {} $f \; &
 echo "  Copying Sketch preferences…"
+find ~/Library/Preferences -mtime -$t -iname "*sketch3*.plist" -exec cp {} "$f" \;
 wait
 
 # Get some basic OS/CPU/GPU info
-system_profiler -detaillevel mini SPDisplaysDataType SPHardwareDataType SPSoftwareDataType >$f/system_info.txt &
 echo "  Copying anonymous system info…"
+system_profiler -detaillevel mini SPDisplaysDataType SPHardwareDataType SPSoftwareDataType >"$f/system_info.txt"
 wait
 
 # Zip it
-cd $f
-zip -r -X -dd -q $f.zip * &
 echo ""
 echo "  Zipping it all up…"
+zip -r -X -dd -j -q "$f.zip" "$f"
 wait
 
 # Delete the folder
-rm -rf $f &
 echo "  Cleaning up…"
+rm -rf "$f"
 wait
 
 echo ""
@@ -70,4 +69,4 @@ echo "  Please send back the Sketch Logs zip file."
 echo ""
 
 # Reveal the zip file in Finder
-open -R $f.zip
+open -R "$f.zip"

@@ -8,7 +8,7 @@ Run the following command in Terminal to execute the script:
 bash <(curl -fsSL https://git.io/sketchlogs) 1h
 ```
 
-> ☝️ The logs are zipped up in a single file, ready to share with the support team.
+> ☝️ The logs will be zipped up in a single file, ready to share with the support team.
 All the information inside these logs is **anonymous** and **doesn’t contain any personal identifiers**.
 
 

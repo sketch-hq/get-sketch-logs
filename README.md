@@ -17,19 +17,22 @@ The parameter can be set in
 - `h` - hours
 - `d` - days
 
-Normally the max amount of time the log is stored is `72h` (`3d`)
-
-Running the script without this parameter defaults to `1h`.
-
 ## Logs
 
-The script gathers the following logs for the given period:
+The following information is gathered:
 
-- Sketch **Collaboration log**
-- **Console log** filtered to `sketch` events only
-- **Crash logs** for `Sketch` and/or `SketchMirrorHelper`
-- List of enabled and disabled **Sketch Plugins**
-- Sketch **preferences** plist
-- Basic **OS/CPU/GPU info**
+1. Sketch **Collaboration log**
+2. **Console log** filtered to `sketch` events only
+3. **Crash logs** for `Sketch` and `SketchMirrorHelper`
+4. List of enabled and disabled **Sketch Plugins**
+5. Sketch **preferences** plist
+6. Basic **OS/CPU/GPU info**
 
 The logs are zipped up in a single file, ready to share with the support team.
+
+## Considerations
+
+- Collaboration log is stored only for max `12h`
+- Console log is stored only for max `3d`
+- Running the script without the time period will default to `1h`
+- To retrieve the Collaboration or Console log, admin rights are required. Otherwise the operation will be simply skipped.

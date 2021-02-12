@@ -17,9 +17,16 @@ The parameter can be set in
 - `h` - hours
 - `d` - days
 
-## Logs
+## Considerations
 
-The following information is gathered:
+- Collaboration log is stored only for max `12h`
+- Console log is stored only for max `3d`
+- Running the script without the time parameter will default to `1h`
+- To retrieve the Collaboration or Console log, admin rights are required. Otherwise the operation will be simply skipped.
+
+## What’s in the logs
+
+The following anonymous information is gathered, without any personal identifiers:
 
 1. Sketch **Collaboration log**
 2. **Console log** filtered to `sketch` events only
@@ -30,9 +37,4 @@ The following information is gathered:
 
 The logs are zipped up in a single file, ready to share with the support team.
 
-## Considerations
 
-- Collaboration log is stored only for max `12h`
-- Console log is stored only for max `3d`
-- Running the script without the time parameter will default to `1h`
-- To retrieve the Collaboration or Console log, admin rights are required. Otherwise the operation will be simply skipped.

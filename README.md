@@ -1,6 +1,6 @@
 # Get Sketch Logs
 
-This script will get all the support logs and basic system info required for troubleshooting any Sketch Mac app issues.
+This script will get all the support logs and basic system info required for troubleshooting any [Sketch Mac app](https://sketch.com) issues.
 
 To execute the script, run this in Terminal:
 

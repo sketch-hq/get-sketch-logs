@@ -1,8 +1,8 @@
 # Get Sketch Logs
 
-This script will get all the support logs and basic system info required for troubleshooting any [Sketch Mac app](https://sketch.com) issues.
+This script will get all the support logs and basic system information required for troubleshooting any [Sketch Mac app](https://sketch.com) issues.
 
-To execute the script, run this in Terminal:
+Run the following command in Terminal to execute the script:
 
 ```
 bash <(curl -fsSL https://git.io/URL_PENDING) 1h
@@ -11,7 +11,7 @@ bash <(curl -fsSL https://git.io/URL_PENDING) 1h
 ## Options
 
 Adjust the `1h` to whatever period best covers the investigated incident time. 
-The parameter can be set in
+The parameter can be set in:
 
 - `m` - minutes
 - `h` - hours

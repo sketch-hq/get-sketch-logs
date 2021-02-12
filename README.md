@@ -8,6 +8,10 @@ Run the following command in Terminal to execute the script:
 bash <(curl -fsSL https://git.io/URL_PENDING) 1h
 ```
 
+> ☝️ The logs are zipped up in a single file, ready to share with the support team.
+All the information inside these logs is **anonymous** and **doesn't contain any personal identifiers**.
+
+
 ## Options
 
 Adjust the `1h` to whatever period best covers the investigated incident time. 
@@ -34,6 +38,3 @@ The following information is collected:
 4. List of enabled and disabled **Sketch Plugins**
 5. Sketch **preferences** plist
 6. Basic **OS/CPU/GPU info**
-
-The logs are zipped up in a single file, ready to share with the support team.
-All the information inside these logs is anonymous and doesn't contain any personal identifiers.

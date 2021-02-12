@@ -34,5 +34,5 @@ The logs are zipped up in a single file, ready to share with the support team.
 
 - Collaboration log is stored only for max `12h`
 - Console log is stored only for max `3d`
-- Running the script without the time period will default to `1h`
+- Running the script without the time parameter will default to `1h`
 - To retrieve the Collaboration or Console log, admin rights are required. Otherwise the operation will be simply skipped.

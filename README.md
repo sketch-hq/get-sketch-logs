@@ -28,9 +28,9 @@ The parameter can be set in:
 - Running the script without the time parameter will default to `1h`
 - To retrieve the Collaboration or Console log, admin rights are required. Otherwise the operation will be simply skipped.
 
-## Logs List
+## Included information
 
-The following information is collected:
+The following information is collected by the script:
 
 1. Sketch **Collaboration log**
 2. **Console log** filtered to `sketch` events only

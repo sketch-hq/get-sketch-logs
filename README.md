@@ -23,8 +23,7 @@ The parameter can be set in:
 
 ## Considerations
 
-- Collaboration log is stored only for max `12h`
-- Console log is stored only for max `3d`
+- Console and Collaboration logs are stored for max `3d`
 - Running the script without the time parameter will default to `1h`
 - To retrieve the Collaboration or Console log, admin rights are required. Otherwise the operation will be simply skipped.
 

@@ -23,7 +23,7 @@ mkdir -p "$f"
 
 # Get the Sketch Collaboration log from the system/console log
 echo "  Copying Collaboration logs…"
-log show --last $t --predicate '(subsystem == "com.bohemiancoding.sketch3.xcode") && (category == "collaboration")' --info >"$f/Collab-$d.log"
+log show --last $t --predicate '(subsystem == "com.bohemiancoding.sketch3.xcode") && ((category == "collaboration") || (category == "collab-opener"))' --info >"$f/Collab-$d.log"
 
 # Get the Sketch logs from the system/console log
 echo "  Copying Console logs…"

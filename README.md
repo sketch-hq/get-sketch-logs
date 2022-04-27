@@ -5,7 +5,7 @@ This script will get all the support logs and basic system information required 
 Run the following command in Terminal to execute the script:
 
 ```
-bash <(curl -fsSL https://git.io/sketchlogs) 1h
+bash <(curl -fsSL https://sketch.com/logs) 1h
 ```
 
 > ☝️ The logs will be zipped up in a single file, ready to share with the support team.
